@@ -1,2 +1,2 @@
-const edades = [20, 18, 34, 25, 29, 30, 36, 19];
+const edades = [21, 19, 34, 38, 27, 30, 25, 16];
 console.log("Edades: "+ edades);
