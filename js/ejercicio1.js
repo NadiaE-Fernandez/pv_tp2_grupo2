@@ -1,3 +1,3 @@
-const integrantes = "Matias, Juan, Nadia y Yesica";
-console.log("Somos ", integrantes, "y estamos aprendiendo javascript.");
-// 
+let integrantes= "Yésica de los Angeles Arias,Juan Pablo Farfán,Nadia Evangelina Fernandez,Matias Fernando Quispe";	
+ 
+console.log("Somos " + integrantes + "  y estamos aprendiendo javascript.");
