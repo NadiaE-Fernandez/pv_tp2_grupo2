@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicar</title>
+    <script>
+        function duplicar(arreglo) {
+        return arreglo.map(function(numero) {
+            return numero * 2;
+        });
+        }
+
+        let cantidad = parseInt(prompt("¿Cuántos números quieres ingresar?"));
+        let arreglo = [];
+
+        for (let i = 0; i < cantidad; i++) {
+        let numero = parseFloat(prompt("Ingresa el número " + (i + 1) + ":"));
+        if (isNaN(numero)) {
+            alert("Entrada inválida. Por favor ingresa solo números.");
+            i--; // Repetir la misma iteración
+        } else {
+            arreglo.push(numero);
+        }
+        }
+
+        let resultado = duplicar(arreglo);
+        alert("Resultado: " + resultado.join(", "));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
