@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SumarRango</title>
+        <script>
+        function sumarRango() {
+            let inicial = parseInt(prompt("Ingrese el numero inicial :"));
+            let final = parseInt (prompt("Ingrese el numero final: "));
+            if (inicial>final){
+                console.log ("Error: el numero inicial debe ser menor que el numero final. ");
+                return;
+            }
+            let suma=0;
+            for (let i=inicial;i<=final;i++){
+                suma+=i;
+            }
+            console.log("la suma del rango es : ", suma);
+        }
+            sumarRango();
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
