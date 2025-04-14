@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    padding: 20px;
+    color: #333;
+  }
+  
+  h1 {
+    color: #2a6592;
+  }
+  
+  .contenedor {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  #mensaje {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #146c43;
+    font-weight: bold;
+  }
+  
