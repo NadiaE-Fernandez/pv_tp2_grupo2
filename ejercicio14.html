@@ -6,26 +6,18 @@
     <title>Duplicar</title>
     <script>
         function duplicar(arreglo) {
-        return arreglo.map(function(numero) {
-            return numero * 2;
-        });
+        let resultado = [];
+        for (let i = 0; i < arreglo.length; i++) {
+            resultado.push(arreglo[i] * 2);
+        }
+        return resultado;
         }
 
-        let cantidad = parseInt(prompt("¿Cuántos números quieres ingresar?"));
-        let arreglo = [];
+        const entrada = prompt("Ingresa un arreglo de números separados por comas (ej: 1,2,3):");
+        const arreglo = entrada.split(",").map(num => parseFloat(num)); // esta línea solo convierte a números
+        const resultado = duplicar(arreglo);
 
-        for (let i = 0; i < cantidad; i++) {
-        let numero = parseFloat(prompt("Ingresa el número " + (i + 1) + ":"));
-        if (isNaN(numero)) {
-            alert("Entrada inválida. Por favor ingresa solo números.");
-            i--; // Repetir la misma iteración
-        } else {
-            arreglo.push(numero);
-        }
-        }
-
-        let resultado = duplicar(arreglo);
-        alert("Resultado: " + resultado.join(", "));
+        alert(resultado);
     </script>
 </head>
 <body>
