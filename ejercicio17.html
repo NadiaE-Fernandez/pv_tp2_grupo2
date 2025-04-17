@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContarLetraA</title>
+    <script>
+        function ContarLetraA(texto){
+            let contador=0;
+            for (let i=0;i<texto.length;i++){
+                if (texto[i]==='a'){
+                    contador++
+                }
+            }
+            return contador;
+        }
+        let textoIngresado = prompt("Ingrese un texto: ");
+        let resultado = ContarLetraA(textoIngresado);
+        console.log("La letra 'a' aparece: ", resultado , "veces");
+    </script>
+ </head>
+</html>
