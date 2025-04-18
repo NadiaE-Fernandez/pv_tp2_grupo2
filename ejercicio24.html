@@ -7,22 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="changeBackgroundColor()">Cambiar color de fondo</button>
-    <script>
-      
-      const colores = ['red', 'blue', 'green', 'yellow', 'orange', 'pink'];
-      let index = 0;
+    <button id="btn-cambiar-color">Cambiar color de fondo</button>
+    <script type ="module">
+        
+        import{changeBackgroundColor}  from "../js/ejercicio24.js";
+        const btnCambiarColor = document.getElementById("btn-cambiar-color");
 
-      const changeBackgroundColor = () => {
-      const color = colores[index];
-      document.body.style.backgroundColor = color;
-      console.log(`Color de fondo cambiado a: ${color}`);
-
-      index++;
-      if (index >= colores.length) {
-          index = 0;
-        }
-     }  ; 
+        btnCambiarColor.addEventListener("click", () => {
+        const color = changeBackgroundColor();
+        document.body.style.backgroundColor = color;
+        console.log('Color de fondo:', color);
+        });
     </script>
     
 </body>
